@@ -1,0 +1,143 @@
+* {
+			  box-sizing: border-box;
+			}
+
+			html {
+				font-size: 70%;
+				font-family: Times New Roman;
+			}
+
+			body {
+			  font-family: Times New Roman, serif;
+			  background-color: #e4ede0;
+			}
+
+			h1, h2, p, li {
+				font-family:  Helvetica;
+				font-weight: bolder;
+				color:  #454545;
+			}
+
+			a:visited {
+					color: #f00;
+			}
+
+			a:hover {
+					color: #009;
+					background: #eee;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #1ea2a4;
+			  padding: 20px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			  font-family: Arial, sans-serif;
+			  font-size: 15;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 25px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			ul {
+				background-color:  yellowgreen;
+				font-size: 20px;
+			}
+
+			ul li {
+				font-size: .5em;
+				font-size:  1.2rem;
+				width:  80%;
+				height: 3rem;
+			}
+
+
+
+			ol li {
+				font.size:  .6em;
+				font-size: 1.2rem;
+				width: 80%;
+				height: 3rem;
+				background-color: #e3dac9;
+				padding: .8em;
+			}
+
+			p {
+				font-size:  1.2rem;
+			}
+			article {
+			  float: left;
+			  padding: 25px;
+			  width: 70%;
+			  background-color: #f4eecc;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			#paragrafo1 {
+				color: #1ea2a4 ;
+				text-align: justify;
+			}
+
+			#paragrafo2 {
+				text-align: justify;
+				color: #2c501e;
+				text-decoration:  text-shadow;
+
+			}
+
+			button {
+				background-image: url(./exercicio/botao.png);
+				background-size:  cover;
+				width: 100px;
+				height: 50px;
+				font-size: 2rem;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #1ea2a4 ;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			  text-decoration: none;
+			}
+
+			form div {
+				position: static;
+				position: relative;
+				margin-top:  -10px;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			

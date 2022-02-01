@@ -1,0 +1,56 @@
+
+div {
+    margin: 40px auto;
+}
+
+
+#grafico01 {
+    background-color: silver;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    align-self: center;
+    text-align: justify;
+    font-size: 12px;
+    border-radius: 50%
+    
+}
+
+#grafico01:hover {
+    background-color:tomato;
+}
+
+.filtro:hover {
+    filter:blur(10px);
+}
+.filtro {
+    filter:opacity(10px)
+}
+
+#grafico01 img {
+    width: 100%;
+    height: auto;
+}
+
+#grafico02 {
+    display: block;
+    background-color: rgb(121, 189, 121);
+    width: 320px;
+    height: 250px;
+    text-align:justify;
+    margin-left: auto;
+    margin-right:auto;  
+}
+
+#grafico02:hover {
+    background-color:tomato;
+}
+
+form {
+    display:flex; 
+    align-content:center;
+}
+
+#filtroDaniel:hover {
+    filter:grayscale(50%)
+}

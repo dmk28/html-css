@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+	<head>
+	<title>Elementos de layout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width", initial-scale="1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	</head>
+	<body>
+		<header>
+			<h2>Fale conosco</h2>
+		</header>		<section>
+			<nav>
+				<ul>
+					<!--endereçamento do html através de href são feitas através de #-->
+					<li><a href="07 - homepage - exercicio.html"><button id="botaoHome">Home</button></a></li>
+					<li><a href="#sobre"><button id="botaoSobre">Sobre</button></a></li>
+					<li><a href="#contato"><button id="botaoContato">Contato</button></a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+				<!--aqui você explica ao formulário o método. Nesse caso, é "post", ou envio-->
+					<form method="post">	
+				 	  <div>
+				 	  	<!--label = permite que você atribua valores string ao campo do formulário para checagem de valor-->
+						<label for="nome">Nome</label>
+							<input type="text" name="nome" id="nome">
+				   	</div>
+				   	   <div>
+						<label for="email">Email</label>
+							<input type="email" name="email" id="email">
+					  </div>
+					<div>
+						<label for="desejo">Mensagem</label>
+							<textarea name="desejo" id="desejo" rows="5"></textarea>	
+					</div>
+					<!--radio = apenas uma das opções será checada-->
+					<div> <p>
+						<label>Qual linguagens você prefere?</label>
+							<input type="radio" name="linguagens"> HTML
+
+							<input type="radio" name="linguagens"> CSS
+
+							<input type="radio" name="linguagens"> JavaScript
+					</div></p>
+					<!--checkbox = permite que sejam preenchidas mais de uma opção, lista de checagens-->
+					<div> <p>
+						<label>Qual linguagens você prefere?</label>
+							<input type="checkbox" name="linguagens"> HTML
+
+							<input type="checkbox" name="linguagens"> CSS
+
+							<input type="checkbox" name="linguagens"> JavaScript
+					</div></p>
+					<!--value = faz uma opção drop-down do valor do formulário-->
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho">Vermelho</option>
+						</select>
+					</div>
+					<div class="botaoEnviar">
+					<!--input type=submit implica em um botão de envio, onde os dados serão remetidos-->
+						<button type="submit">Enviar Pesquisa</button>
+					</div>
+				</form>
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			Desenvolvido por Daniel
+
+		</footer>
+
+	</body>
+</html>
+

@@ -1,0 +1,176 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 2em 2em 1em 1em;
+	padding: 1em;
+	font-size: 62.5%; /* equivalente a 10px */
+	font-family: serif;
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 1.6rem;
+  
+}
+
+article,  h1 {
+  text-align: center;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.2rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66F;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+  background-color: #333;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+.Coluna {
+  display: block;
+  float:left;
+  width: 33.3%;
+  padding: 5px;
+  columns: 150px 2;
+  background-color: lightblue;
+}
+
+article {
+  background-color: darkkhaki;
+}
+
+nav {
+  background-color: beige;
+  border: 1px black;
+}
+
+
+/*Mobile First*/
+@media (max-width: 769px) {
+
+  body {
+    background-color: teal;
+    color: #fff;
+  }
+
+  p, h3, li, a {
+    color:whitesmoke;
+  }
+
+}
+/*Tablet*/
+
+@media (max-width: 768px) {
+
+  nav {
+    width: 30vw;
+  }
+
+  article {
+    width: 70vw;
+  }
+
+  .coluna {
+    width: 50vw;
+    min-width: unset;
+  }
+  #navegacao {
+    width: 50vw;
+  }
+}
+/*Smartphone*/
+
+@media (max-width: 425px) { 
+  nav, 
+  article, 
+  .Coluna,
+  footer,
+  header,
+  div {
+    width: 100%;
+    min-width: 320px;
+   }
+
+  #navegacao {
+    width: 50vw;
+  }
+  #grafico02 {
+    width: 100%;
+    min-width: 320px;
+    overflow: scroll;
+  }
+  
+
+ }

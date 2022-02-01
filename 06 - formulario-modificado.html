@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+	<head>
+	<title>Elementos de layout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"  width="device-width", initial-scale="1">
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<link rel="stylesheet" type="text/css" href="./css/modulo-07.css">
+	<link rel="stylesheet" type="text/css" href="./css/layouts-fluidos.css">
+	<link rel="stylesheet" type="text/css" href="./css/graficos2.css">
+
+
+	</head>
+	<body>
+		<header>
+			<h2>Vamos tomar um café!</h2>
+		</header>		<section>
+			<nav id="navegacao">
+                
+                 <div id="imagem_vetorial">
+                     
+        
+
+                </div>
+
+				<ul id="navegacao">
+					<!--endereçamento do html através de href são feitas através de #-->
+					<li id="subpainel"><a href="./07 - homepage - modificada.html"><button id="botaoSobre">Sobre</button></a></li>
+					<li id="subpainel"><a href="./08-exercicio-modulo-07.html"><button>Tabela</button></a></li>
+                    
+				</ul>
+			</nav>
+
+			<article>
+
+                <div id="grafico01">
+                  <!--  <source media="(min-width: 280px)" srcset="/coffee-square.jpg">
+                    <source media="(max-width: 600px)" srcset="./images/coffee-sm.jpg"> --->
+                    <img class="filtro" srcset="./images/coffee-square.jpg" alt="Café">
+    
+                </div>
+                
+				
+				<p>Preencha os campos abaixo, vamos tomar um café juntos!</p>
+				<!--aqui você explica ao formulário o método. Nesse caso, é "post", ou envio-->
+					<form method="post">	
+				 	  <div>
+				 	  	<!--label = permite que você atribua valores string ao campo do formulário para checagem de valor-->
+						<label for="nome">Nome</label>
+							<input type="text" name="nome" id="nome">
+				   	</div>
+				   	   <div>
+						<label for="email">Email</label>
+							<input type="email" name="email" id="email">
+					  </div>
+					<div>
+						<label for="desejo">Mensagem</label>
+							<textarea name="desejo" id="desejo" rows="5"></textarea>	
+					</div>
+					<!--radio = apenas uma das opções será checada-->
+					<div> <p>
+						<label>Qual tipo de café você gostaria de tomar?</label>
+							<input type="radio" name="cafe"> Capuccino
+
+							<input type="radio" name="cafe"> Mocha
+
+							<input type="radio" name="cafe"> Espresso
+					</div></p>
+					<!--checkbox = permite que sejam preenchidas mais de uma opção, lista de checagens-->
+					<div> <p>
+						<label>Qual adicional gostaria no seu café?</label>
+							<input type="checkbox" name="cafe"> Chantilly
+
+							<input type="checkbox" name="cafe"> Bailey's
+
+							<input type="checkbox" name="cafe"> Leite
+					</div></p>
+					<!--value = faz uma opção drop-down do valor do formulário-->
+					<div>
+						<label>Qual tipo de adoçante você prefere?</label>
+						<select>
+							<option value="Açucar">Açucar</option>
+							<option value="Stevia">Stevia</option>
+							<option value="Aspartame">Aspartame</option>
+						</select>
+					</div>
+					<div class="botaoEnviar">
+					<!--input type=submit implica em um botão de envio, onde os dados serão remetidos-->
+						<button type="submit">Enviar Café</button>
+					</div>
+				</form>
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			Desenvolvido por Daniel
+
+		</footer>
+
+	</body>
+</html>
+

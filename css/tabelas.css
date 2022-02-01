@@ -1,0 +1,99 @@
+
+
+table {
+	display: ;
+	border: 1px solid;
+	background: #ffffff;
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+table div {
+	column-count: 2;
+	padding: 1rem;
+	border-collapse: collapse;
+}
+
+table tr {
+	border: 1px solid #757575;
+	padding: 1rem 0;
+	column-count: 2;
+	text-align: left;
+	flex-flow:  row-reverse;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: lightseagreen;
+	border-style: solid;
+	
+}
+
+table tbody tr:nth-child(even) {
+	background-color: lightskyblue;
+	border-style: solid;
+}
+
+table tbody tr:hover {
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: right;
+	vertical-align: middle;
+	border: 1px solid black;
+
+}
+
+table tr td:first-child {
+	text-align: left;
+	font-weight: bold;
+}
+
+table th {
+
+	background-color: #234589;
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.table-container {
+	padding: 2rem 2rem;
+}
+
+.table-container h3 {
+}
+
+.table-container tfoot {
+	background: #EEEEEE;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+
+
+.topo div {
+	
+	border-bottom: solid #000 0.1rem 10rem; 
+}
+.fundo div {
+
+}
+
+.idealreal {
+	display: flex;	
+	font-size: 0.6rem;
+	text-align: left;
+	font-weight: normal;
+
+}
+
+.tabelatitulo {
+	text-align: center;
+}
